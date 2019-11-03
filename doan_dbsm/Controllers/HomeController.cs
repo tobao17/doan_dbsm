@@ -20,6 +20,10 @@ namespace doan_dbsm.Controllers
             ViewBag.list2 = list2;
             return View();
         }
+        public ActionResult MainMenu ()
+        {
+            return PartialView();
+        }
 
         public ActionResult About()
         {

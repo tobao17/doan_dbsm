@@ -17,10 +17,7 @@ namespace doan_dbsm.Models.DATA
            .HasRequired(a => a.ORDER)
            .WithMany()
            .HasForeignKey(a => a.order_ID);
-            modelBuilder.Entity<USER>()
-         .HasRequired(a => a.custumer)
-         .WithMany()
-         .HasForeignKey(a => a.custumerid);
+      
         }
         public DbSet <ABOUT> ABOUTs { get; set; }
         public DbSet <CONTACT>CONTACTs { get; set; }
@@ -33,6 +30,6 @@ namespace doan_dbsm.Models.DATA
         public DbSet<PRODUCT_GROUP> PRODUCT_GROUPs { get; set; }
         public DbSet<PRODUCT_KIND> PRODUCT_KINDs { get; set; }
         public DbSet<SLIDE> SLIDEs { get; set; }
-        public DbSet<USER>USERs { get; set; }
+        public DbSet<ADMIN>USERs { get; set; }
     }
 }

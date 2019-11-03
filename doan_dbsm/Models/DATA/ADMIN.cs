@@ -5,14 +5,14 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 namespace doan_dbsm.Models.DATA
 {
-    public class USER
+    public class ADMIN
     {
         [Key]
-        public int userid { get; set; }
+        public int adminid { get; set; }
         public string name { get; set; }
         public string pass { get; set; }
         
-        public int custumerid { get; set; }
-        public virtual CUSTUMER custumer { get; set; }
+   
+
     }
 }

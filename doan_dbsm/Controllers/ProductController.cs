@@ -20,5 +20,15 @@ namespace doan_dbsm.Controllers
         {
             return PartialView();
         }
+        public ActionResult Index()
+        {
+            return View();
+        }
+        public ActionResult Grproduct (string id)
+        {
+            var gr_product = db.PRODUCTs.Where(a => a.PRODUCT_GROUP.gr_groupname == id&&a.product_id>10).ToList();
+            ViewBag.gr_product = gr_product;
+            return View();
+        }
     }
 }
