@@ -37,11 +37,11 @@ namespace doan_dbsm.Controllers
             CUSTUMER tv = db.CUSTUMERs.SingleOrDefault(n => n.name == name && n.pass == pass);
               if (tv!=null)
             {
-                Session["taikhoan"] = tv;
+                Session["taikhoan"] = tv.name;
                 return RedirectToAction("Index", "Home");
             }
 
-            return null;
+            return View();
         }
     }
 }

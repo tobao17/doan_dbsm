@@ -24,6 +24,10 @@ namespace doan_dbsm.Controllers
         {
             return PartialView();
         }
+        public ActionResult HeaderIcon()
+        {
+            return PartialView();
+        }
 
         public ActionResult About()
         {

@@ -7,9 +7,7 @@ namespace doan_dbsm
     {
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
-        {
-          
-
+        { 
             bundles.Add(new ScriptBundle("~/bundles/admin/js").Include(
                     "~/Content/share/js/main.js", "~/Content/share/vendor/perfect-scrollbar/perfect-scrollbar.min.js", "~/Content/share/vendor/sweetalert/sweetalert.min.js", "~/Content/share/vendor/isotope/isotope.pkgd.min.js"
                     , "~/Content/share/vendor/MagnificPopup/jquery.magnific-popup.min.js", "~/Content/share/vendor/parallax100/parallax100.js",
