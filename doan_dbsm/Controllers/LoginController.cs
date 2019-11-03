@@ -43,5 +43,14 @@ namespace doan_dbsm.Controllers
 
             return View();
         }
+        public ActionResult dangxuat(FormCollection f)
+
+        {
+
+            Session["taikhoan"] = null;
+
+
+            return RedirectToAction("Index", "Home");
+        }
     }
 }
