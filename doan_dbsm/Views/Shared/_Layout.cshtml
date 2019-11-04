@@ -578,9 +578,9 @@
 
 
     @Scripts.Render("~/bundles/admin/js")
-    <script src="vendor/slick/slick.min.js"></script>
-    <script src="js/slick-custom.js"></script>
-
+    <script src="~/Content/share/vendor/slick/slick.min.js"></script>
+    <script src="~/Content/share/js/slick-custom.js"></script>
+    <script src="~/Content/share/js/main.js"></script>
 
     @*<script src="vendor/jquery/jquery-3.2.1.min.js"></script>*@
     <!--===============================================================================================-->
@@ -683,7 +683,7 @@
     <!--===============================================================================================-->
     @*@Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")*@
-    <script src="js/main.js"></script>
+
     @RenderSection("scripts", required: false)
 
 </body>

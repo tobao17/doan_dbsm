@@ -21,6 +21,17 @@ namespace doan_dbsm.Controllers
             return PartialView();
         }
         public ActionResult Index()
+
+        {
+            var list = db.PRODUCTs.ToList();
+
+
+
+            ViewBag.list2 = list;
+        
+            return View();
+        }
+        public ActionResult Product_detail()
         {
             return View();
         }

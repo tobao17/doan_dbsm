@@ -151,6 +151,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CART\CART.cs" />
     <Compile Include="Models\DATA\ABOUT.cs" />
     <Compile Include="Models\DATA\CONTACT.cs" />
     <Compile Include="Models\DATA\CUSTUMER.cs" />
@@ -464,12 +465,11 @@
     <Content Include="Content\share\vendor\slick\slick.scss" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\Image\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Home\HeaderIcon.cshtml" />
+    <Content Include="Views\Product\Product_detail.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
