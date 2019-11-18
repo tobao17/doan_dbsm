@@ -141,8 +141,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\admin\adminAreaRegistration.cs" />
+    <Compile Include="Areas\admin\Controllers\adminController.cs" />
+    <Compile Include="Areas\admin\Controllers\quanlysanphamController.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\CARTController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\FeaturesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -151,7 +155,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\CART\CART.cs" />
+    <Compile Include="Models\CART\ItemCART.cs" />
     <Compile Include="Models\DATA\ABOUT.cs" />
     <Compile Include="Models\DATA\CONTACT.cs" />
     <Compile Include="Models\DATA\CUSTUMER.cs" />
@@ -160,13 +164,31 @@
     <Compile Include="Models\DATA\ORDER.cs" />
     <Compile Include="Models\DATA\PRODUCT.cs" />
     <Compile Include="Models\DATA\PRODUCT_GROUP.cs" />
-    <Compile Include="Models\DATA\PRODUCT_KIND.cs" />
     <Compile Include="Models\DATA\SHOPONLINE_CONTEXT.cs" />
     <Compile Include="Models\DATA\SLIDE.cs" />
     <Compile Include="Models\DATA\ADMIN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\admin\css\maps\jquery-jvectormap-2.0.3.css" />
+    <Content Include="Areas\admin\images\american-express.png" />
+    <Content Include="Areas\admin\images\cropper.jpg" />
+    <Content Include="Areas\admin\images\favicon.ico" />
+    <Content Include="Areas\admin\images\img.jpg" />
+    <Content Include="Areas\admin\images\inbox.png" />
+    <Content Include="Areas\admin\images\mastercard.png" />
+    <Content Include="Areas\admin\images\media.jpg" />
+    <Content Include="Areas\admin\images\paypal.png" />
+    <Content Include="Areas\admin\images\picture.jpg" />
+    <Content Include="Areas\admin\images\prod-1.jpg" />
+    <Content Include="Areas\admin\images\prod-2.jpg" />
+    <Content Include="Areas\admin\images\prod-3.jpg" />
+    <Content Include="Areas\admin\images\prod-4.jpg" />
+    <Content Include="Areas\admin\images\prod-5.jpg" />
+    <Content Include="Areas\admin\images\user.png" />
+    <Content Include="Areas\admin\images\visa.png" />
+    <Content Include="Areas\admin\js\datepicker\daterangepicker.js" />
+    <Content Include="Areas\admin\js\moment\moment.min.js" />
     <Content Include="Content\Login\css\popuo-box.css" />
     <Content Include="Content\Login\css\style.css" />
     <Content Include="Content\Login\images\b2.jpg" />
@@ -465,11 +487,24 @@
     <Content Include="Content\share\vendor\slick\slick.scss" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Folder Include="Areas\admin\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\admin\Views\web.config" />
+    <Content Include="Areas\admin\Views\Shared\Sharelayout.cshtml" />
+    <Content Include="Areas\admin\Views\admin\Index.cshtml" />
+    <Content Include="Areas\admin\Views\quanlysanpham\Index.cshtml" />
+    <Content Include="Areas\admin\Views\quanlysanpham\taomoi.cshtml" />
+    <Content Include="Areas\admin\Views\quanlysanpham\edit.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Home\HeaderIcon.cshtml" />
     <Content Include="Views\Product\Product_detail.cshtml" />
+    <Content Include="Views\CART\Thongbao.cshtml" />
+    <Content Include="Views\CART\CartIcon.cshtml" />
+    <Content Include="Views\CART\DetalProduct.cshtml" />
+    <Content Include="Views\CART\Cart.cshtml" />
+    <Content Include="Views\Product\Product_details.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -12,21 +12,21 @@ namespace doan_dbsm.Controllers
         // GET: Product
         public ActionResult productpartialview()
         {
+            var list = db.PRODUCTs.ToList();
             //var lstproduct1 =  db.PRODUCTs.ToString();
             //ViewBag.lstproduct1 = lstproduct1;
             return PartialView();
         }
         public ActionResult productpartialview2()
         {
-            return PartialView();
+            var list = db.PRODUCTs.ToList();
+            return PartialView(list);
         }
         public ActionResult Index()
 
         {
+
             var list = db.PRODUCTs.ToList();
-
-
-
             ViewBag.list2 = list;
         
             return View();
@@ -35,6 +35,13 @@ namespace doan_dbsm.Controllers
         {
             return View();
         }
+        public ActionResult Product_details(int Masp)
+        {
+            var Product = db.PRODUCTs.SingleOrDefault(n => n.product_id == Masp);
+            ViewBag.list5 = Product;
+            return View();
+        }
+
         public ActionResult Grproduct (string id)
         {
             var gr_product = db.PRODUCTs.Where(a => a.PRODUCT_GROUP.gr_groupname == id&&a.product_id>10).ToList();

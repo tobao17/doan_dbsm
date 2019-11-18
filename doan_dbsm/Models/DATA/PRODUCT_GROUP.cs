@@ -13,7 +13,7 @@ namespace doan_dbsm.Models.DATA
         public string gr_groupname { get; set; }
         public int kind_id { get; set; }
         public virtual List<PRODUCT> PRODUCTs { get; set; }
-        public virtual  PRODUCT_KIND PRODUCT_KIND { get; set; }
+
 
     }
 }

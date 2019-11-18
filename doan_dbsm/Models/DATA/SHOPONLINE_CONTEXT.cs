@@ -24,11 +24,9 @@ namespace doan_dbsm.Models.DATA
         public DbSet <CUSTUMER>CUSTUMERs { get; set; }
         public DbSet <DETAILS_ORDER>DETAILS_ORDERs { get; set; }
         public DbSet<FEEDBACK> FEEDBACKs { get; set; }
-
         public DbSet <ORDER>ORDERs { get; set; }
         public DbSet<PRODUCT> PRODUCTs { get; set; }
         public DbSet<PRODUCT_GROUP> PRODUCT_GROUPs { get; set; }
-        public DbSet<PRODUCT_KIND> PRODUCT_KINDs { get; set; }
         public DbSet<SLIDE> SLIDEs { get; set; }
         public DbSet<ADMIN>USERs { get; set; }
     }
