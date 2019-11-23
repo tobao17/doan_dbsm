@@ -35,7 +35,7 @@ namespace doan_dbsm
             routes.MapRoute(
                name: "Features",
                url: "Features",
-               defaults: new { controller = "Features", action = "Index", id = UrlParameter.Optional }
+               defaults: new { controller = "CART", action = "Cart", id = UrlParameter.Optional }
        );
             routes.MapRoute(
              name: "blog",

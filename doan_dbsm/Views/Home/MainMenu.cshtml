@@ -5,11 +5,11 @@
             <a href="/">Home</a>
         </li>
 
-        <li>
+        <li class="">
             <a href="/product">Shop</a>
         </li>
 
-        <li class="label1" data-label1="hot">
+        <li class="label1 " data-label1="hot">
             <a href="/Features">Features</a>
         </li>
 
@@ -26,3 +26,22 @@
         </li>
     </ul>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+</script>
+
+<script type="text/javascript">
+    //$(document).ready(function () {
+    //    $('li').on('click', function () {
+    //        $(this).sliblings().removeClass('active-menu');
+    //        $(this).addClass('active-menu')
+    //    })
+    //});
+    $(document).on('click', 'ul li', function () {
+        $(this).addClass('active-menu').siblings().removeClass('active-menu');
+    });
+    //$('main-menu').on('click', 'li', function () {
+    //    $('.main-menu li').removeClass('active-menu');
+    //    $(this).addClass('active-menu');
+    //});
+</script>

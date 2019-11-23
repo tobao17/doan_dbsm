@@ -16,6 +16,6 @@ namespace doan_dbsm.Models.DATA
         public string note { get; set; }
         public int custumerid { get; set; }
         public virtual CUSTUMER CUSTUMER { get; set; }
-        public virtual DETAILS_ORDER DETAILS_ORDER { get; set; }
+        public virtual List<DETAIL_ORDER> DETAIL_ORDERs { get; set; }
     }
 }

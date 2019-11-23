@@ -13,16 +13,14 @@ namespace doan_dbsm.Models.DATA
         {
 
             //Adds configurations for Student from separate class
-            modelBuilder.Entity<DETAILS_ORDER>()
-           .HasRequired(a => a.ORDER)
-           .WithMany()
-           .HasForeignKey(a => a.order_ID);
-      
+            modelBuilder.Entity<DETAIL_ORDER>().HasKey(t => new { t.order_ID, t.product_id });
+
         }
+
         public DbSet <ABOUT> ABOUTs { get; set; }
         public DbSet <CONTACT>CONTACTs { get; set; }
         public DbSet <CUSTUMER>CUSTUMERs { get; set; }
-        public DbSet <DETAILS_ORDER>DETAILS_ORDERs { get; set; }
+        public DbSet<DETAIL_ORDER> DETAIL_ORDERs { get; set; }
         public DbSet<FEEDBACK> FEEDBACKs { get; set; }
         public DbSet <ORDER>ORDERs { get; set; }
         public DbSet<PRODUCT> PRODUCTs { get; set; }

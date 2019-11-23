@@ -38,6 +38,7 @@ namespace doan_dbsm.Controllers
               if (tv!=null)
             {
                 Session["taikhoan"] = tv.name;
+                Session["taikhoanid"] = tv.custumerid;
                 return RedirectToAction("Index", "Home");
             }
 
@@ -48,6 +49,7 @@ namespace doan_dbsm.Controllers
         {
 
             Session["taikhoan"] = null;
+            Session["taikhoanid"] = null;
 
 
             return RedirectToAction("Index", "Home");

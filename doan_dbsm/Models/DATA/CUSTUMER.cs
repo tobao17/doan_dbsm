@@ -15,8 +15,8 @@ namespace doan_dbsm.Models.DATA
         public string phone { get; set; }
         public string adress { get; set; }
         public string email { get; set; }
-        public string identity { get; set; }
+        public string city { get; set; }
  
-        public virtual List<ORDER>ORDERs { get; set; }
+        public virtual List<ORDER>  ORDERs { get; set; }
     }
 }

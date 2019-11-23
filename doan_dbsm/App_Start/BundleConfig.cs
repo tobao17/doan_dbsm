@@ -29,8 +29,7 @@ namespace doan_dbsm
                       "~/Content/share/vendor/slick/slick.css",
                       "~/Content/share/vendor/MagnificPopup/magnific-popup.css",
                       "~/Content/share/vendor/perfect-scrollbar/perfect-scrollbar.css",
-                      "~/Content/share/css/util.css",
-                      "~/Content/share/css/main.css"));
+                      "~/Content/share/css/util.css"));
         }
     }
 }

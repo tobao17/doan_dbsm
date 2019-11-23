@@ -148,7 +148,6 @@
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\CARTController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
-    <Compile Include="Controllers\FeaturesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -159,7 +158,7 @@
     <Compile Include="Models\DATA\ABOUT.cs" />
     <Compile Include="Models\DATA\CONTACT.cs" />
     <Compile Include="Models\DATA\CUSTUMER.cs" />
-    <Compile Include="Models\DATA\DETAILS_ORDER.cs" />
+    <Compile Include="Models\DATA\DETAIL_ORDER.cs" />
     <Compile Include="Models\DATA\FEEDBACK.cs" />
     <Compile Include="Models\DATA\ORDER.cs" />
     <Compile Include="Models\DATA\PRODUCT.cs" />
@@ -380,7 +379,6 @@
     <Content Include="Views\Product\productpartialview2.cshtml" />
     <Content Include="Views\Home\MainMenu.cshtml" />
     <Content Include="Views\Product\Grproduct.cshtml" />
-    <Content Include="Views\Features\Index.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
@@ -505,6 +503,7 @@
     <Content Include="Views\CART\DetalProduct.cshtml" />
     <Content Include="Views\CART\Cart.cshtml" />
     <Content Include="Views\Product\Product_details.cshtml" />
+    <Content Include="Views\Login\dangnhap.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -13,6 +13,7 @@ namespace doan_dbsm.Models.CART
         public int dongia { get; set; }
         public string anh { get; set; }
         public string mieuta { get; set; }
+      
         public ItemCART(int imasp)
         {
              using (SHOPONLINE_CONTEXT db=new SHOPONLINE_CONTEXT())
@@ -23,6 +24,7 @@ namespace doan_dbsm.Models.CART
                 this.anh = sp.image;
                 this.dongia =int.Parse( sp.prices);
                 this.mieuta = sp.Description;
+             
 
             }
         }

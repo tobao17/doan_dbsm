@@ -44,7 +44,7 @@ namespace doan_dbsm.Areas.admin.Controllers
             {
                 sp.gr_groupid = 2;
             }
-            sp.count = sp.SizeL + sp.SizeS + sp.SizeM;
+            
             db.PRODUCTs.Add(sp);
             db.SaveChanges();
             return Redirect("Index");
@@ -81,10 +81,7 @@ namespace doan_dbsm.Areas.admin.Controllers
             {
                 spedit.gr_groupid = 2;
             }
-            spedit.count = sp.SizeL + sp.SizeS + sp.SizeM;
-            spedit.SizeL = sp.SizeL;
-            spedit.SizeM = sp.SizeM;
-            spedit.SizeS = sp.SizeS;
+           
             spedit.product_Name = sp.product_Name;
             spedit.Description = sp.Description;
             db.SaveChanges();
