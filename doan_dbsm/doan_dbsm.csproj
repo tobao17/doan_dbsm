@@ -143,6 +143,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\admin\adminAreaRegistration.cs" />
     <Compile Include="Areas\admin\Controllers\adminController.cs" />
+    <Compile Include="Areas\admin\Controllers\QuanlyhoadonController.cs" />
     <Compile Include="Areas\admin\Controllers\quanlysanphamController.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
@@ -495,6 +496,8 @@
     <Content Include="Areas\admin\Views\quanlysanpham\Index.cshtml" />
     <Content Include="Areas\admin\Views\quanlysanpham\taomoi.cshtml" />
     <Content Include="Areas\admin\Views\quanlysanpham\edit.cshtml" />
+    <Content Include="Areas\admin\Views\Quanlyhoadon\Index.cshtml" />
+    <Content Include="Areas\admin\Views\Quanlyhoadon\Bill.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Home\HeaderIcon.cshtml" />
     <Content Include="Views\Product\Product_detail.cshtml" />

@@ -13,8 +13,8 @@ namespace doan_dbsm.Models.DATA
         [Key]
         public int product_id { get; set; }
         public int  Quantity { get; set; }
-        public ORDER ORDER { get; set; }
-        public  PRODUCT PRODUCT { get; set; }
+        public virtual ORDER ORDER { get; set; }
+        public virtual PRODUCT PRODUCT { get; set; }
 
     }
 }
