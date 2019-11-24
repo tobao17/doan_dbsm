@@ -61,12 +61,12 @@
                     <img src="@Url.Content("/images/"+item.image)" alt="IMG-BANNER" width="50" style="border-radius:50%">
                 </td>
                 <td>
-                    <a href="#" class="table-link">
+                    @*<a href="#" class="table-link">
                         <span class="fa-stack">
                             <i class="fa fa-square fa-stack-2x"></i>
                             <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
                         </span>
-                    </a>
+                    </a>*@
                     <a href="@Url.Action("edit","quanlysanpham",new {@product_id=item.product_id })" class="table-link">
                         <span class="fa-stack">
                             <i class="fa fa-square fa-stack-2x"></i>

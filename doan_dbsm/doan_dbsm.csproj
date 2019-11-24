@@ -507,6 +507,7 @@
     <Content Include="Views\CART\Cart.cshtml" />
     <Content Include="Views\Product\Product_details.cshtml" />
     <Content Include="Views\Login\dangnhap.cshtml" />
+    <Content Include="Views\Login\quenmatkhau.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -4,7 +4,6 @@
 }
 
 
-
 <!DOCTYPE html>
 <html>
 
@@ -34,27 +33,23 @@
 <!-- Body -->
 <body>
 
-    <h1>EXISTING LOGIN FORM</h1>
+    <h1>EXISTING FORGET FORM</h1>
 
     <div class="w3layoutscontaineragileits">
-        <h2>Login here</h2>
+        <h2>Get the password here</h2>
         @using (Html.BeginForm("dangnhap", "Login"))
         {
-            <input type="text" Name="name" placeholder="Name">
-            <input type="password" Name="pass" placeholder="Password" required="">
+            <input type="email" Name="name" placeholder="EMAIL">
             <ul class="agileinfotickwthree">
                 <li>
-                    <input type="checkbox" id="brand1" value="" name="customer">
-                    <label for="brand1"><span></span>customer</label>
-
-                    <input type="checkbox" id="brand2" value="" name="admin" class="" style="margin-left:-8px">
-                    <label for="brand2" style="margin-left:-8px"><span></span>admin</label>
-                    <a href="@Url.Action("quenmatkhau","Login")">Forgot password?</a>
+                    <input type="checkbox" id="brand1" value="">
+                    <a href="~/Login/Index">
+                        Already have an account? Login
+                    </a>
                 </li>
-               
             </ul>
             <div class="aitssendbuttonw3ls">
-                <input type="submit" value="LOGIN">
+                <input type="submit" value="GET THE PASSWORD">
                 <p> To register new account <span>→</span> <a class="w3_play_icon1" href="#small-dialog1"> Click Here</a></p>
                 <div class="clear"></div>
             </div>

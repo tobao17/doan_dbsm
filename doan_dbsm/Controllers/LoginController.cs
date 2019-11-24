@@ -34,13 +34,28 @@ namespace doan_dbsm.Controllers
         {
             string name = f["name"].ToString();
             string pass = f["pass"].ToString();
-            CUSTUMER tv = db.CUSTUMERs.SingleOrDefault(n => n.name == name && n.pass == pass);
-              if (tv!=null)
+            if (f["customer"] !=null)
             {
-                Session["taikhoan"] = tv.name;
-                Session["taikhoanid"] = tv.custumerid;
-                return RedirectToAction("Index", "Home");
+                CUSTUMER tv = db.CUSTUMERs.SingleOrDefault(n => n.name == name && n.pass == pass);
+                if (tv != null)
+                {
+                    Session["taikhoan"] = tv.name;
+                    Session["taikhoanid"] = tv.custumerid;
+                    return RedirectToAction("Index", "Home");
+                }
             }
+            else if (f["admin"]!=null)
+            {
+               ADMIN tv=db.USERs.SingleOrDefault(n => n.name == name && n.pass == pass);
+                if (tv != null)
+                {
+                    Session["taikhoanad"] = tv.name;
+                    Session["taikhoanidad"] = tv.adminid;
+                    return RedirectToAction("Index","quanlysanpham",new { area = "admin"});
+                }
+
+            }
+
 
             return View();
         }
@@ -53,6 +68,10 @@ namespace doan_dbsm.Controllers
 
 
             return RedirectToAction("Index", "Home");
+        }
+        public ActionResult quenmatkhau ()
+        {
+            return View();
         }
     }
 }
